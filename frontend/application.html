@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- import css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Open Sans Condensed";
+      }
+    </style>
+  </head>
+  <body>
+    <div class=" mt-n5">
+      <nav class="text-white container-fluid">
+        <div class="" style="background-color: #00aca8 !important;">
+          <div class="contain  ml-n3">
+            <div class="toggle " aria-hidden="false">
+              hdkhkdkkhd
+            </div>
+            <div class="nav-btn" style="cursor:pointer">
+              <a><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="toggle " aria-hidden="false">
+              hdkhkdkkhd
+            </div>
+            <div>
+              <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li id="about"><a>About</a></li>
+                <li id="services"><a>Services</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li id="venue"><a>Venue</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container" style="margin-bottom: 180px !important;">
+        <div>
+          <p class="display-4 text-center p-5 mt-5 " style="  color: #e90d7f;">
+            We would love you to answer some questions
+          </p>
+        </div>
+
+        <div class="quizDiv">
+          <div id="quiz" class="card mt-3"></div>
+          <button
+            id="submit"
+            class="btn-block  mt-3 p-1 quizBn"
+            style="border-radius: 5px;"
+          >
+            Submit Quiz
+          </button>
+          <div id="results"></div>
+        </div>
+      </div>
+      <div class=" fixed-bottom container-fluid">
+        <div class="respondiv ">
+          <div class="container" style="display:block;">
+            <div>
+              <p class="respon-text">
+                Sign up now for imagine future leaders conference and be a part
+                of Africa greatest transition
+              </p>
+            </div>
+            <div class="respon">
+              <div class="respon1">
+                <div>
+                  <div class="days">35</div>
+                  <div class=" time-word">DAYS</div>
+                </div>
+
+                <span>:</span>
+
+                <div>
+                  <div class="hours">17</div>
+                  <div class=" time-word">HOURS</div>
+                </div>
+
+                <span>:</span>
+
+                <div>
+                  <div class="minutes">50</div>
+                  <div class=" time-word">MINS</div>
+                </div>
+
+                <span class="l1-txt2">:</span>
+
+                <div>
+                  <div class="seconds">39</div>
+                  <div class=" time-word">SECS</div>
+                </div>
+              </div>
+              <div class="respon2">
+                <button class="respon2-btn">
+                  <a href="register.html">JOIN US NOW</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+      const quizDiv = document.querySelector("#quizDiv");
+      const myQuestions = [
+        {
+          question: "Who invented JavaScript?",
+          answers: {
+            a: "Douglas Crockford",
+            b: "Sheryl Sandberg",
+            c: "Brendan Eich"
+          },
+          correctAnswer: "c"
+        },
+        {
+          question: "Which one of these is a JavaScript package manager?",
+          answers: {
+            a: "Node.js",
+            b: "TypeScript",
+            c: "npm"
+          },
+          correctAnswer: "c"
+        },
+        {
+          question: "Which tool can you use to ensure code quality?",
+          answers: {
+            a: "Angular",
+            b: "jQuery",
+            c: "RequireJS",
+            d: "ESLint"
+          },
+          correctAnswer: "d"
+        }
+      ];
+      const quizContainer = document.getElementById("quiz");
+      const resultsContainer = document.getElementById("results");
+      const submitButton = document.getElementById("submit");
+
+      function buildQuiz() {}
+
+      function showResults() {}
+
+      // display quiz right away
+      buildQuiz();
+
+      // on submit, show results
+      submitButton.addEventListener("click", showResults);
+
+      function buildQuiz() {
+        // variable to store the HTML output
+        const output = [];
+
+        // for each question...
+        myQuestions.forEach((currentQuestion, questionNumber) => {
+          // variable to store the list of possible answers
+          const answers = [];
+
+          // and for each available answer...
+          for (letter in currentQuestion.answers) {
+            // ...add an HTML radio button
+            answers.push(
+              `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+          </label>`
+            );
+          }
+
+          // add this question and its answers to the output
+          output.push(
+            `<div class="question h5 px-4 mt-3"> ${
+              currentQuestion.question
+            } </div>
+        <div class="answers"> ${answers.join("")} </div>`
+          );
+        });
+
+        // finally combine our output list into one string of HTML and put it on the page
+        quizContainer.innerHTML = output.join("");
+      }
+      function showResults() {
+        // gather answer containers from our quiz
+        const answerContainers = quizContainer.querySelectorAll(".answers");
+
+        // keep track of user's answers
+        let numCorrect = 0;
+
+        // for each question...
+        myQuestions.forEach((currentQuestion, questionNumber) => {
+          // find selected answer
+          const answerContainer = answerContainers[questionNumber];
+          const selector = `input[name=question${questionNumber}]:checked`;
+          userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+          // if answer is correct
+          if (userAnswer === currentQuestion.correctAnswer) {
+            // add to the number of correct answers
+            numCorrect++;
+
+            // color the answers green
+            answerContainers[questionNumber].style.color = "lightgreen";
+          }
+          // if answer is wrong or blank
+          else {
+            // color the answers red
+            answerContainers[questionNumber].style.color = "red";
+          }
+        });
+
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      }
+
+      // if answer is correct
+      if (userAnswer === currentQuestion.correctAnswer) {
+        // add to the number of correct answers
+        numCorrect++;
+
+        // color the answers green
+        answerContainers[questionNumber].style.color = "lightgreen";
+      }
+      // if answer is wrong or blank
+      else {
+        // color the answers red
+        answerContainers[questionNumber].style.color = "red";
+      }
+      // show number of correct answers out of total
+      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    </script>
+  </body>
+</html>

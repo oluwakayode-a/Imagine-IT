@@ -1,0 +1,269 @@
+:root {
+  --background-color: #00aca8;
+  --fontFamily: "Akronim", cursive;
+  --navColor: #00aca9e1;
+}
+
+.respondiv {
+  background-color: var(--navColor);
+
+  width: 100%;
+  height: 130px;
+}
+#venue1 {
+  margin-bottom: 110px !important;
+}
+.respon1 {
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+.img {
+  margin-top: 60px;
+}
+.respon1 span {
+  font-size: 20px;
+}
+.respon {
+  display: flex;
+  justify-content: center;
+}
+.respon2-btn a,
+.respon2-btn a:hover {
+  text-decoration: none;
+  color: white;
+}
+.respon-text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+.respon2-btn,
+#submit {
+  border: 0;
+
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #e90d7f;
+  color: white;
+}
+
+.respon2-btn:hover,
+#submit:hover {
+  color: white;
+  background-color: #f05894;
+}
+.seconds,
+.days,
+.minutes,
+.hours {
+  /* width: 50px; */
+  font-size: 25px;
+  background-color: #0d153a;
+  color: white;
+  padding: 5px;
+  margin: 0px 5px;
+}
+.time-word {
+  color: white;
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.registerButton {
+  font-size: 20px;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  background-color: var(--navColor);
+  border: none;
+}
+.registerButton a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+.registerButton a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* header */
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  margin: 0;
+
+  position: fixed;
+
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 3;
+  transition: 0.5s;
+}
+.nav-menu {
+  margin: 0;
+
+  padding: 0;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+li:first-child {
+  margin-top: 40px;
+}
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu li a {
+  padding: 6px;
+  display: inline-block;
+
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  cursor: pointer;
+}
+.nav-menu li a:hover {
+  background-color: var(--navColor);
+  color: white;
+}
+
+.menu.active {
+  top: 0;
+  overflow: auto;
+}
+.top2 {
+  padding: 60px 10px;
+  background-color: #674ea0;
+  color: white;
+  margin-top: -48px;
+}
+
+#container {
+  overflow: scroll;
+  height: 90px;
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+#registered {
+  position: relative;
+  background: white;
+  padding: 20px 0;
+}
+#content {
+  display: flex;
+  background-color: rgb(206, 139, 139);
+  white-space: nowrap;
+}
+.counter-section {
+  display: block;
+  padding: 15px 0;
+  min-width: 80% !important;
+  height: 500px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute;
+  top: 10%; */
+  margin-top: -70px;
+}
+#submitBtn {
+  background-color: #f05894 !important;
+  color: white;
+}
+
+.button div {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  /* padding: 3px 30px 20px 2px;
+ */
+  border-radius: 50%;
+  padding-bottom: 30px !important;
+  box-shadow: 3px 4px 3px 2px;
+}
+.button button {
+  background-color: white;
+  border: 0;
+}
+#slide:active {
+  border: 0;
+}
+.contain {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  padding: 20px 10px;
+  background-color: var(--navColor);
+  width: 100%;
+  z-index: 5;
+}
+@media (min-width: 1200px) {
+  .contain {
+    display: none;
+  }
+  .toggle {
+    padding-left: -800px !important;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    flex: 0 0 auto;
+    position: fixed;
+    height: 60px;
+    top: 0px;
+    margin-left: -15px !important;
+    background-color: var(--navColor);
+    padding: 10px 20px;
+    /* left: -70px; */
+  }
+  .nav-menu {
+    margin: 0;
+    display: inline;
+    padding: 0 90px;
+    margin-top: -20px;
+    position: relative;
+    left: 0%;
+    top: -50px;
+    text-align: right;
+  }
+  .nav-menu li {
+    display: inline-block;
+  }
+  .img {
+    margin-top: 0px;
+  }
+  .about {
+    margin-top: 100px;
+  }
+  .counter-section {
+    display: block;
+    padding: 15px 0;
+    min-width: 60% !important;
+    height: 500px;
+  }
+}

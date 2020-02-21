@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- import css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Open Sans Condensed";
+      }
+      span {
+        color: red;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <nav class="text-white container-fluid">
+        <div class="" style="background-color: #00aca8 !important;">
+          <div class="contain  ml-n3">
+            <div class="toggle " aria-hidden="false">
+              hdkhkdkkhd
+            </div>
+            <div class="nav-btn" style="cursor:pointer">
+              <a><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="toggle " aria-hidden="false">
+              hdkhkdkkhd
+            </div>
+            <div>
+              <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li id="about"><a>About</a></li>
+                <li id="services"><a>Services</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li id="venue"><a>Venue</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class=" form-div px-3 pb-5 mb-5 container">
+        <form class="needs-validation my-5 py-5 form" novalidate>
+          <div>
+            <div class=" mb-3">
+              <label for="validationCustom01">First name</label>
+              <input
+                type="text"
+                class="form-control firstName"
+                id="validationCustom01"
+                placeholder="First name"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                please input a name
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input
+                type="text"
+                class="form-control lastName"
+                id="validationCustom02"
+                placeholder="Last name"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                please input a name
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom03">Name of school</label>
+              <input
+                type="text"
+                class="form-control nameOfSchool"
+                id="validationCustom03"
+                placeholder="Name of school"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Input the name of your school
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom04">School address</label>
+              <input
+                type="text"
+                class="form-control schoolAddress"
+                id="validationCustom04"
+                placeholder="School address"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                Input your school address
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom05">Class</label>
+              <input
+                type="text"
+                class="form-control class"
+                id="validationCustom05"
+                placeholder="Class"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                input your class
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom06">State of residence</label>
+              <input
+                type="text"
+                class="form-control stateOfResidence"
+                id="validationCustom06"
+                placeholder="State of residence"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                input your state of residence
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom07">Home Address</label>
+              <input
+                type="text"
+                class="form-control homeAddress"
+                id="validationCustom07"
+                placeholder="Home address"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                input your address
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom08">Return Destination</label>
+              <input
+                type="text"
+                class="form-control returnDestination"
+                id="validationCustom08"
+                placeholder="Return destination"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                input your place of return
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom09">Parent phone number</label>
+              <input
+                type="number"
+                class="form-control parentPhoneNumber"
+                id="validationCustom09"
+                placeholder="Parent phone number"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">
+                input your parent phone number
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label for="validationCustom10">Student phone number</label>
+              <input
+                type="text"
+                class="form-control studentPhoneNumber"
+                id="validationCustom10"
+                placeholder="Student phone number"
+                value=""
+              />
+            </div>
+
+            <div class="input-group  mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Allergies</span>
+              </div>
+              <textarea
+                class="form-control allergies"
+                aria-label="With textarea "
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn  btn-block" type="submit" id="submitBtn">
+              Submit form
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class=" fixed-bottom container-fluid">
+        <div class="respondiv ">
+          <div class="container" style="display:block;">
+            <div>
+              <p class="respon-text">
+                Sign up now for imagine future leaders conference and be a part
+                of Africa greatest transition
+              </p>
+            </div>
+            <div class="respon">
+              <div class="respon1">
+                <div>
+                  <div class="days">35</div>
+                  <div class=" time-word">DAYS</div>
+                </div>
+
+                <span>:</span>
+
+                <div>
+                  <div class="hours">17</div>
+                  <div class=" time-word">HOURS</div>
+                </div>
+
+                <span>:</span>
+
+                <div>
+                  <div class="minutes">50</div>
+                  <div class=" time-word">MINS</div>
+                </div>
+
+                <span class="l1-txt2">:</span>
+
+                <div>
+                  <div class="seconds">39</div>
+                  <div class=" time-word">SECS</div>
+                </div>
+              </div>
+              <div class="respon2">
+                <button class="respon2-btn">
+                  <a href="register.html">JOIN US NOW</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+    <script>
+      (function() {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener(
+                "submit",
+                function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+
+      var form = document.querySelector("form");
+      form.addEventListener("submit", function(e) {
+        var firstName = document.querySelector(".firstName").value;
+        var lastName = document.querySelector(".lastName").value;
+        var nameOfSchool = document.querySelector(".nameOfSchool").value;
+        var schoolAddress = document.querySelector(".schoolAddress").value;
+
+        var homeAddress = document.querySelector(".homeAddress").value;
+        var returnDestination = document.querySelector(".returnDestination")
+          .value;
+        var parentPhoneNumber = document.querySelector(".parentPhoneNumber")
+          .value;
+        var stateOfResidence = document.querySelector(".stateOfResidence")
+          .value;
+        var allergies = document.querySelector(".allergies").value;
+        e.preventDefault();
+        class Information {
+          constructor(
+            firstName,
+            lastName,
+            homeAddress,
+            returnDestination,
+            parentPhoneNumber,
+            stateOfResidence,
+            nameOfSchool,
+            schoolAddress,
+            allergies
+          ) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.homeAddress = homeAddress;
+            this.returnDestination = returnDestination;
+            this.parentPhoneNumber = parentPhoneNumber;
+            this.stateOfResidence = stateOfResidence;
+            this.nameOfSchool = nameOfSchool;
+            this.schoolAddress = schoolAddress;
+            this.allergies = allergies;
+          }
+        }
+
+        var newInfo = new Information(
+          firstName,
+          lastName,
+          homeAddress,
+          returnDestination,
+          parentPhoneNumber,
+          stateOfResidence,
+          nameOfSchool,
+          schoolAddress,
+          allergies
+        );
+      });
+    </script>
+  </body>
+</html>
